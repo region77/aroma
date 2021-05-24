@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+			integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+			crossorigin="anonymous"
+		/>
+
+		<title>Личный кабинет</title>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="#">Панель навигации</a>
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent"
+				aria-expanded="false"
+				aria-label="Переключатель навигации"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Главная <span class="sr-only">(текущая)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Ссылка</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a
+							class="nav-link dropdown-toggle"
+							href="#"
+							id="navbarDropdown"
+							role="button"
+							data-toggle="dropdown"
+							aria-haspopup="true"
+							aria-expanded="false"
+						>
+							Выпадающий список
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Действие</a>
+							<a class="dropdown-item" href="#">Другое действие</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Что-то еще здесь</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Отключенный</a>
+					</li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+					<input
+						class="form-control mr-sm-2"
+						type="search"
+						placeholder="Поиск"
+						aria-label="Поиск"
+					/>
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Поиск</button>
+				</form>
+			</div>
+		</nav>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-3">
+					<div
+						class="nav flex-column nav-pills"
+						id="v-pills-tab"
+						role="tablist"
+						aria-orientation="vertical"
+					>
+						<a
+							class="nav-link"
+							id="profileTab"
+							data-toggle="pill"
+							href="#v-pills-profile"
+							role="tab"
+							aria-controls="v-pills-profile"
+							aria-selected="false"
+							>Профиль</a
+						>
+						<a
+							class="nav-link"
+							id="messagesTab"
+							data-toggle="pill"
+							href="#v-pills-messages"
+							role="tab"
+							aria-controls="v-pills-messages"
+							aria-selected="false"
+							>Сообщения</a
+						>
+						<a
+							class="nav-link"
+							id="settingsTab"
+							data-toggle="pill"
+							href="#v-pills-settings"
+							role="tab"
+							aria-controls="v-pills-settings"
+							aria-selected="false"
+							>Настройки</a
+						>
+						<a
+							class="nav-link"
+							id="friendsTab"
+							data-toggle="pill"
+							href="#v-pills-friends"
+							role="tab"
+							aria-controls="v-pills-friends"
+							aria-selected="false"
+							>Друзья</a
+						>
+					</div>
+				</div>
+				<div class="col-9">
+					<div class="tab-content my-3" id="v-pills-tabContent">
+						<div
+							class="tab-pane fade"
+							id="v-pills-profile"
+							role="tabpanel"
+							aria-labelledby="v-pills-profile-tab"
+						>
+							<div class="row">
+								<div class="col-sm-3">
+									<img
+										src="https://png.pngtree.com/png-vector/20190704/ourmid/pngtree-vector-user-young-boy-avatar-icon-png-image_1538408.jpg"
+										alt=""
+										width="100%"
+									/>
+								</div>
+								<div class="col-sm-9">
+									<h1 id="userName"></h1>
+									<h3>О себе</h3>
+									<p>
+										Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias officiis totam
+										cupiditate, praesentium nesciunt eaque provident facere deleniti saepe laborum
+										esse autem assumenda tenetur harum ex maxime perferendis fugit. Accusantium.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div
+							class="tab-pane fade"
+							id="v-pills-messages"
+							role="tabpanel"
+							aria-labelledby="v-pills-messages-tab"
+						>
+							<div class="row">
+								<div class="col-sm-3">
+									<div class="row">
+										<div class="col-3">
+											<img
+												src="https://www.pavilionweb.com/wp-content/uploads/2017/03/man-300x300.png"
+												width="100%"
+												alt=""
+											/>
+											<!-- https://www.pavilionweb.com/wp-content/uploads/2017/03/man-300x300.png -->
+										</div>
+										<div class="col-9">
+											<div>
+												<h5>Анатолий Сидоров</h5>
+												<p>Ха, действительно смешно)</p>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-3">
+											<img
+												src="https://www.pavilionweb.com/wp-content/uploads/2017/03/man-300x300.png"
+												width="100%"
+												alt=""
+											/>
+										</div>
+										<div class="col-9">
+											<div>
+												<h5>Семен Семеныч</h5>
+												<p>Нет, завтра я не смогу</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-9">
+									<div class="row">
+										<div class="col-12 border">
+											<div class="row">
+												<div class="col-1">
+													<img
+														src="https://png.pngtree.com/png-vector/20190704/ourmid/pngtree-vector-user-young-boy-avatar-icon-png-image_1538408.jpg"
+														width="100%"
+														alt=""
+													/>
+												</div>
+												<div class="col-11">
+													<h6>Василий Пупкин</h6>
+													<p>Поехали завтра на шашлыки?</p>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-1">
+													<img
+														src="https://www.pavilionweb.com/wp-content/uploads/2017/03/man-300x300.png"
+														width="100%"
+														alt=""
+													/>
+												</div>
+												<div class="col-11">
+													<h6>Семен Семеныч</h6>
+													<p>Нет, завтра я не смогу</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-9">
+											<textarea name="" id="" cols="30" rows="1" class="form-control"></textarea>
+										</div>
+										<div class="col-3">
+											<button class="btn btn-warning">Отправить</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div
+							class="tab-pane fade"
+							id="v-pills-settings"
+							role="tabpanel"
+							aria-labelledby="v-pills-settings-tab"
+						>
+							<h1>Настройки страницы</h1>
+							<p>Имя: <span>Василий</span><span>[изменить]</span></p>
+							<p>Фамилия: <span>Пупкин</span><span>[изменить]</span></p>
+							<p>[изменить пароль]</p>
+						</div>
+						<div
+							class="tab-pane fade"
+							id="v-pills-friends"
+							role="tabpanel"
+							aria-labelledby="v-pills-friends-tab"
+						>
+							<h1>Страница всех друзей</h1>
+							<table class="table">
+								<thead>
+									<tr>
+										<th scope="col">#</th>
+										<th scope="col">Имя</th>
+										<th scope="col">Фамилия</th>
+										<th scope="col">Email</th>
+									</tr>
+								</thead>
+								<tbody id="usersListTable"></tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+			crossorigin="anonymous"
+		></script>
+		<script>
+			let pathname = location.pathname.split("/")[2];
+			let user;
+			async function getUser() {
+				let responce = await fetch("/getUser");
+				return await responce.json();
+			}
+			async function getUsers() {
+				let responce = await fetch("/getUsers");
+				return await responce.json();
+			}
+
+			if (pathname == "profile") {
+				user = getUser();
+				getUser().then((user) => {
+					userName.innerText = `${user.name} ${user.lastname}`;
+				});
+
+				$("#v-pills-profile-tab").tab("show");
+			} else if (pathname == "messages") {
+				$("#v-pills-messages-tab").tab("show");
+			} else if (pathname == "settings") {
+				$("#v-pills-settings-tab").tab("show");
+			} else if (pathname == "friends") {
+				getUsers().then((users) => {
+					for (let i = 0; i < users.length; i++)
+						usersListTable.insertAdjacentHTML(
+							"beforeend",
+							` <tr>
+						<th scope="row">${users[i].id}</th>
+						<td>${users[i].name}</td>
+						<td>${users[i].lastname}</td>
+						<td>${users[i].email}</td>
+						</tr>`
+						);
+
+					console.log(users);
+				});
+				$("#v-pills-friends-tab").tab("show");
+			} else {
+				location.href = location.protocol + "//" + location.host; //на главную
+			}
+			//document.getElementById(pathname + "Tab").classList.add("show");
+			document.getElementById(pathname + "Tab").classList.add("active");
+
+			let navLinks = document.querySelectorAll(".nav-link");
+			for (let i = 0; i < navLinks.length; i++) {
+				navLinks[i].addEventListener("click", () => {
+					let page = navLinks[i].getAttribute("aria-controls").split("v-pills-")[1];
+					//console.log(page);
+					history.pushState("", "", page);
+				});
+			}
+		</script>
+	</body>
+</html>
