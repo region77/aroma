@@ -44,7 +44,7 @@ class User{
         $email = mb_strtolower(trim($email));
         $pass = trim($pass);
         $result = $mysqli->query("SELECT * FROM `users` WHERE `email`='$email'");
-        $result = $result->fetch_assoc();
+        $result = $result->fetch_assoc(); //преобразование в массив
         if (password_verify($pass, $result["pass"])) {
             $_SESSION["id"] = $result["id"];
             return json_encode(["result" => "ok"]);
@@ -63,9 +63,9 @@ class User{
     {
         global $mysqli;
         $users = array();
-        $result = $mysqli->query("SELECT `name`,`lastname`,`email`,`id` FROM `users` WHERE 1");
-        while ($row = $result->fetch_assoc()) {
-            $users[] = $row;
+        $result = $mysqli->query("SELECT `name`,`lastname`,`email`,`id` FROM `users` WHERE 1");//1 - это вывести всё
+        while ($row = $result->fetch_assoc()) {//в строку приходят юзеры
+            $users[] = $row; //прилетает строка из выше
         }
         return json_encode($users);
     }
