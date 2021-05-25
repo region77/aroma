@@ -7,7 +7,7 @@
 				<nav aria-label="breadcrumb" class="banner-breadcrumb">
 					<ol class="breadcrumb">
 						<li class="breadcrumb-item"><a href="/">Главная</a></li>
-						<li class="breadcrumb-item active" aria-current="page"> </li>
+						<li class="breadcrumb-item active" aria-current="page">***</li>
 					</ol>
 				</nav>
 			</div>
@@ -63,7 +63,7 @@
 		if (res.result == "ok") {
 			location.href = "users/profile";
 		} else if (res.result == "reject") {
-			info.innerText = `Неправильный логин или пароль.`;
+			info.innerText = `Неверный логин или пароль.`;
 		} else {
 			alert = "Неизвестная ошибка ((";
 		}
