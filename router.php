@@ -12,7 +12,7 @@ if($url[1] == auth){
    $content = file_get_contents("pages/register.html");
 }else if($url[1] == users) {
    require_once("pages/users/index.html");
-}else if($url[1]=="addUser"){ //можно с кавычками и без
+}else if($url[1]==addUser){ //можно с кавычками и без 'addUser'
    echo User::addUser($_POST['name'],$_POST['lastname'],$_POST['email'],$_POST['pass']); //:: два двоеточия - синтаксиси обращения к классу
 }else if($url[1]==authUser){
    echo User::authUser($_POST['email'],$_POST['pass']);
