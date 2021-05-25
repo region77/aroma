@@ -277,7 +277,7 @@
 		<script>
 			let pathname = location.pathname.split("/")[2];
 			let user;
-			async function getUser() {
+			async function getUser() { //асинхронная, тк работает с БД. запрос юзера
 				let responce = await fetch("/getUser");
 				return await responce.json();
 			}
@@ -292,7 +292,7 @@
 					userName.innerText = `${user.name} ${user.lastname}`;
 				});
 
-				$("#v-pills-profile-tab").tab("show");
+				$("#v-pills-profile-tab").tab("show"); //профайл юзера
 			} else if (pathname == "messages") {
 				$("#v-pills-messages-tab").tab("show");
 			} else if (pathname == "settings") {
